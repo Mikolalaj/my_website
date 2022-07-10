@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.389c9287.css",
-    "main.js": "/static/js/main.2676d7ab.js",
-    "static/media/shiba.svg": "/static/media/shiba.ded0da7529ed05d5225f4f35cde609a4.svg",
+    "main.css": "/static/css/main.79265371.css",
+    "main.js": "/static/js/main.d54497da.js",
+    "static/media/shiba-happy.svg": "/static/media/shiba-happy.2e6591468fb146de9b2eb4e16792919e.svg",
+    "static/media/shiba-stubborn.svg": "/static/media/shiba-stubborn.87082c187a1cd18d3f817541254c55d0.svg",
+    "static/media/shiba-angry.svg": "/static/media/shiba-angry.80628a67c6854890e642297783ee23a6.svg",
     "index.html": "/index.html",
-    "main.389c9287.css.map": "/static/css/main.389c9287.css.map",
-    "main.2676d7ab.js.map": "/static/js/main.2676d7ab.js.map"
+    "main.79265371.css.map": "/static/css/main.79265371.css.map",
+    "main.d54497da.js.map": "/static/js/main.d54497da.js.map"
   },
   "entrypoints": [
-    "static/css/main.389c9287.css",
-    "static/js/main.2676d7ab.js"
+    "static/css/main.79265371.css",
+    "static/js/main.d54497da.js"
   ]
 }
