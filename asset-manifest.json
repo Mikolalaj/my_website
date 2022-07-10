@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/my_website/static/css/main.15c739ef.css",
-    "main.js": "/my_website/static/js/main.021eb83a.js",
-    "static/media/shiba.svg": "/my_website/static/media/shiba.ded0da7529ed05d5225f4f35cde609a4.svg",
-    "index.html": "/my_website/index.html",
-    "main.15c739ef.css.map": "/my_website/static/css/main.15c739ef.css.map",
-    "main.021eb83a.js.map": "/my_website/static/js/main.021eb83a.js.map"
+    "main.css": "/static/css/main.15c739ef.css",
+    "main.js": "/static/js/main.7a1a63a1.js",
+    "static/media/shiba.svg": "/static/media/shiba.ded0da7529ed05d5225f4f35cde609a4.svg",
+    "index.html": "/index.html",
+    "main.15c739ef.css.map": "/static/css/main.15c739ef.css.map",
+    "main.7a1a63a1.js.map": "/static/js/main.7a1a63a1.js.map"
   },
   "entrypoints": [
     "static/css/main.15c739ef.css",
-    "static/js/main.021eb83a.js"
+    "static/js/main.7a1a63a1.js"
   ]
 }
