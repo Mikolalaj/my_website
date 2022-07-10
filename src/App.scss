@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+$media-breakpoint: 900px;
 $shiba-color: #d28f29;
 $shiba-font: 'Lobster', sans-serif;
 
@@ -11,6 +12,10 @@ body {
 
 h1 {
     font-size: 60px;
+
+    @media screen and (max-width: $media-breakpoint) {
+        font-size: 40px;
+    }
 }
 
 .shiba {
@@ -21,6 +26,10 @@ h1 {
 .App {
     text-align: center;
     margin-top: 350px;
+
+    @media screen and (max-width: $media-breakpoint) {
+        margin-top: 125px;
+    }
 }
 
 .shiba-wrapper {
@@ -30,7 +39,12 @@ h1 {
     justify-content: center;
     height: 400px;
     margin-top: 50px;
+    
     svg {
         cursor: pointer;
+    }
+
+    @media screen and (max-width: $media-breakpoint) {
+        height: 280px;
     }
 }
