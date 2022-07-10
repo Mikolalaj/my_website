@@ -43,12 +43,12 @@ h3 {
     position: relative;
     z-index: -1;
     margin: 0 auto;
-    width: 410px;
+    width: 440px;
     bottom: 27px;
     height: 10px;
 
     @media screen and (max-width: $media-breakpoint) {
-        width: 270px;
+        width: 290px;
         bottom: 21px;
         height: 6px;
     }
