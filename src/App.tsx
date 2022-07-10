@@ -1,4 +1,4 @@
-import {ReactComponent as ReactLogo} from './shiba.svg';
+import { ReactComponent as ReactLogo } from './shiba.svg';
 
 import './App.scss';
 
