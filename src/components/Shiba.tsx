@@ -1,24 +1,24 @@
 import { ReactComponent as ShibaHappy } from '../images/shiba-happy.svg';
 import { ReactComponent as ShibaStubborn } from '../images/shiba-stubborn.svg';
-import { useState } from "react";
+import { ReactComponent as ShibaAngry } from '../images/shiba-angry.svg';
 import './Shiba.scss';
 
-function Shiba() {
-    const [shibaPetsCounter, setShibaPetsCounter] = useState(0);
+interface ShibaProps {
+    type: 'Happy' | 'Stubborn' | 'Angry';
+    onClick?: any;
+}
+
+function Shiba({ type, onClick }: ShibaProps) {
 
     return (
-    <>
-        <div className='shiba-wrapper'>
-            {shibaPetsCounter < 5 ? 
-                <ShibaHappy onClick={() => setShibaPetsCounter(shibaPetsCounter + 1)}/>
-                : <ShibaStubborn />}
-        </div>
-        <h3>
-            {shibaPetsCounter < 5 ?
-                <>Also, I love <span className='shiba'>Shiba Inu</span></>
-                : "I'm not going on a walk with you!"}
-        </h3>
-    </>
+    <div className='shiba-wrapper'>
+        {type === 'Happy' ? 
+            <ShibaHappy onClick={onClick} />
+        : type === 'Stubborn' ? 
+            <ShibaStubborn onClick={onClick} />
+        : <ShibaAngry onClick={onClick} />
+        }
+    </div>
     );
 }
 

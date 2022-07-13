@@ -1,12 +1,10 @@
-import { ReactComponent as ShibaAngry } from '../images/shiba-angry.svg';
+import Shiba from "../components/Shiba";
 
 function NoContent() {
     return (
     <>
         <h2>You are not supposed to be here!</h2>
-        <div className='shiba-wrapper'>
-            <ShibaAngry onClick={() => {window.open('https://en.wikipedia.org/wiki/Shiba_Inu')}}/>
-        </div>
+        <Shiba type='Angry' onClick={() => {window.open('https://en.wikipedia.org/wiki/Shiba_Inu')}}/>
         <h3>Now I am an angry <span className='shiba'>Shiba 404</span></h3>
     </>
     );

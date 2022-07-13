@@ -1,5 +1,5 @@
 import Icons from '../components/Icons';
-import Shiba from "../components/Shiba";
+import HomeShiba from "../components/HomeShiba";
 
 function Home() {
     return (
@@ -10,7 +10,7 @@ function Home() {
             <div className='underline'></div>
         </div>
         <Icons />
-        <Shiba />
+        <HomeShiba />
     </>
     );
 }
