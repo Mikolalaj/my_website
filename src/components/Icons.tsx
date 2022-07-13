@@ -3,12 +3,18 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from 'react-icons/fa';
 import './Icons.scss';
 
 export default function Icons () {
+    const links = {
+        github: 'https://github.com/Mikolalaj',
+        linkedin: 'https://www.linkedin.com/in/mikolalaj/',
+        twitter: 'https://twitter.com/Mikolalaj_',
+        email: 'mailto:olejnikmikolaj' + '@gmail'
+    }
     return (
     <div className='icons'>
-        <FaGithub />
-        <FaLinkedin />
-        <FaEnvelope />
-        <FaTwitter />
+        <FaGithub onClick={() => {window.open(links.github)}} />
+        <FaLinkedin onClick={() => {window.open(links.linkedin)}} />
+        <FaEnvelope onClick={() => {window.location.href = links.email + '.com'}} />
+        <FaTwitter onClick={() => {window.open(links.twitter)}} />
     </div>
     );
 }
