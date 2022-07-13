@@ -5,18 +5,24 @@ import './Shiba.scss';
 
 interface ShibaProps {
     type: 'Happy' | 'Stubborn' | 'Angry';
-    onClick?: any;
+    onClick?: () => void;
+    isActive?: boolean;
 }
 
-function Shiba({ type, onClick }: ShibaProps) {
+function Shiba({ type, onClick, isActive }: ShibaProps) {
+
+    const props = {
+        className: isActive ? 'active': '',
+        onClick
+    }
 
     return (
     <div className='shiba-wrapper'>
         {type === 'Happy' ? 
-            <ShibaHappy onClick={onClick} />
+            <ShibaHappy {...props} />
         : type === 'Stubborn' ? 
-            <ShibaStubborn onClick={onClick} />
-        : <ShibaAngry onClick={onClick} />
+            <ShibaStubborn {...props} />
+        : <ShibaAngry {...props} />
         }
     </div>
     );

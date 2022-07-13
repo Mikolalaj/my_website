@@ -8,8 +8,13 @@
     height: 400px;
     margin-top: 70px;
     
-    svg {
+    svg.active {
         cursor: pointer;
+        transition: all 0.2s;
+
+        &:active {
+            transform: scale(0.9);
+        }
     }
 
     @media screen and (max-width: $media-breakpoint) {

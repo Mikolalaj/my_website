@@ -7,7 +7,7 @@ function HomeShiba() {
     return (
     <>
         {shibaPetsCounter < 5 ? 
-            <Shiba type='Happy' onClick={() => setShibaPetsCounter(shibaPetsCounter + 1)}/>
+            <Shiba type='Happy' isActive={true} onClick={() => setShibaPetsCounter(shibaPetsCounter + 1)}/>
             : <Shiba type='Stubborn' />}
         <h3>
             {shibaPetsCounter < 5 ?
